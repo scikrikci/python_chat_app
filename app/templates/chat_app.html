@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='cht.css') }}">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js" integrity="sha512-VJ6+sp2E5rFQk05caiXXzQd1wBABpjEj1r5kMiLmGAAgwPItw1YpqsCCBtq8Yr1x6C49/mTpRdXtq8O2RcZhlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="icon" type="image/x-icon" href="https://www.pngmart.com/files/16/Chat-Icon-PNG-File.png">
+    <title>왕의 자리</title>
+
+</head>
+
+<body>
+    <h2 id="title">Chat app</h2>
+    <div id="chat-wrap">
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+        <input type="text" id="sender" class="input" placeholder="Name">
+        <input type="text" id="message" class="input" placeholder="Message">
+        <button type="button" id="submit">Send</button>
+    </div>
+    
+    <script src="{{ url_for('static', filename='cht.js') }}"></script>
+</body>
+</html>

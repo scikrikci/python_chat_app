@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input:focus, button:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Rubik Maze';
+}
+#chat-wrap{
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+}
+
+#chat-window{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+/* 
+#sender{
+}
+#message{
+} */
+
+.input{
+    border: none;
+    margin-bottom: 5px;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    padding-left: 1rem;
+}
